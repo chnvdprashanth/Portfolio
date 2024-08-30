@@ -1,0 +1,28 @@
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+:root {
+  color-scheme: dark;
+}
+::-webkit-scrollbar {
+  width: 10px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* Dark gray thumb for dark mode */
+  border-radius: 300px; /* Rounded thumb */
+  border: 2px solid transparent; /* Adds spacing around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: whitesmoke; /* Slightly lighter thumb on hover */
+}
+
+/* Optional: Additional modern styles for Firefox */
+::-moz-scrollbar-thumb {
+  background-color: #4b5563; /* Matches WebKit thumb style */
+  border-radius: 300px;
+  border: 2px solid transparent;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background-color: whitesmoke; /* Matches WebKit hover style */
+}

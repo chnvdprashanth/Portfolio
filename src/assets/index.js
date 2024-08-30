@@ -1,0 +1,5 @@
+export { default as profile_image } from './profile_image.png'
+export { default as photo_long } from './photo_long.png'
+export { default as viewpoint } from './viewpoint.png'
+export { default as docs } from './docs.png'
+export { default as birdImageClassifier } from './Bird Image Classifier.png'

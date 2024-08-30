@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.on-hover {
+  @apply px-2 py-1 hover:border-b hover:border-blue-600 hover:shadow-lg hover:shadow-blue-600;
+}
+
+.hero {
+  @apply w-full flex gap-x-12 px-20 py-24;
+}
+.name {
+  @apply align-top text-6xl font-bold leading-[72px] tracking-[-2%];
+}
+
+.pic-container {
+  @apply h-[360px] w-80 relative;
+}
+.pic {
+  @apply absolute z-10 top-0 tablet:left-0 w-[300px] h-[340px] rounded-sm bg-gray-950 p-2;
+}
+.background-box {
+  @apply w-[300px] h-80 ml-[120px] mt-10 bg-gray-800 absolute bottom-0 right-0 rounded-sm;
+}
+
+.about {
+  @apply px-20 py-24 bg-gray-900;
+}
+.about-container {
+  @apply flex flex-col gap-y-12 items-center px-8;
+}
+.about-container-inside {
+  @apply flex gap-x-12;
+}
+.about-pic-container {
+  @apply h-[520px] w-[440px] max-tablet:w-[320px] max-tablet:h-[380px] relative;
+}
+.about-pic {
+  @apply h-[480px] w-[400px] max-tablet:w-[280px] max-tablet:h-[360px] absolute left-10 z-10 rounded-sm border-[8px] border-gray-950;
+}
+.about-background-box {
+  @apply w-[400px] h-[480px] max-tablet:w-[320px] max-tablet:h-[360px] bg-gray-800 relative top-10 max-tablet:top-6 bottom-0 right-0 rounded-sm;
+}
+
+.skills {
+  @apply w-full scroll-px-20 py-24 bg-gray-950;
+}
+.skills-container {
+  @apply flex flex-col gap-y-12 px-8;
+}
+.column-1 {
+  @apply flex flex-col items-center gap-y-4;
+}
+.column-2 {
+  @apply flex flex-col gap-y-12;
+}
+
+.lookingFor{
+  @apply px-20 py-24 bg-gray-900
+}
+
+.projects{
+  @apply px-20 py-24 bg-gray-950
+}
+
+.contact{
+  @apply px-20 py-24 bg-gray-900
+}
+
+.footer{
+  @apply px-20 py-6 bg-gray-950
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    @apply flex flex-col-reverse items-center gap-y-12 px-4 py-16;
+  }
+  .name {
+    @apply text-4xl font-semibold;
+  }
+  .pic-container {
+    @apply h-[300px] w-[280px] flex justify-center;
+  }
+  .pic {
+    @apply w-[260px] h-[290px] p-1 top-0;
+  }
+  .background-box {
+    @apply h-[280px] w-[280px];
+  }
+  .about,.lookingFor,.projects,.contact {
+    @apply px-4 py-16;
+  }
+  .about-container {
+    @apply p-0 gap-y-6;
+  }
+  .about-container-inside {
+    @apply flex flex-col items-center gap-y-12 gap-x-0;
+  }
+  .about-pic {
+    @apply top-0 left-1/2 transform -translate-x-1/2;
+  }
+
+  .footer{
+    @apply px-4 py-2
+  }
+}
