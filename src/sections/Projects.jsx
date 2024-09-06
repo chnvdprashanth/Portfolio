@@ -1,8 +1,8 @@
 import { Button, Tag } from "../components";
 import { viewpoint, docs, birdImageClassifier } from "../assets";
 
-const viewpoint_url = "https://viewpoint0614.netlify.app/"
-const docs_url = "https://docsplayground.netlify.app/"
+const viewpoint_url = "https://viewpoint0614.netlify.app/login"
+const docs_url = "https://docs-playground-client.vercel.app/login"
 const birdImageClassifier_url = "https://bird-image-classifier-alexnet.streamlit.app/"
 
 const Projects = () => {
