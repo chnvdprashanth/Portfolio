@@ -1,6 +1,6 @@
 import { Button,NavLink } from './index'
 
-const resume = "https://drive.google.com/file/d/1tio5My21gOJC-eZVV91y5StzLHBpc115/view?usp=sharing"
+const resume = "https://drive.google.com/file/d/1J8UbYo02RFB3qeXEiyAsAeZMt6_4lrDJ/view?usp=sharing"
 
 const Navbar = () => {
   return (
